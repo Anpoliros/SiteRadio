@@ -4,8 +4,9 @@ import Foundation
 class FetcherService {
     private let session: URLSession
     private let timeout: TimeInterval
+    private let listParser: ArticleListParser
     
-    init(timeout: TimeInterval = 10.0) {
+    init(timeout: TimeInterval = 10.0, listParser: ArticleListParser = ArticleListParser()) {
         let config = URLSessionConfiguration.default
         config.timeoutIntervalForRequest = timeout
         config.timeoutIntervalForResource = timeout * 2
@@ -15,6 +16,7 @@ class FetcherService {
         
         self.session = URLSession(configuration: config)
         self.timeout = timeout
+        self.listParser = listParser
     }
     
     /// 从指定URL获取HTML内容
@@ -75,6 +77,41 @@ class FetcherService {
             }
             
             return results
+        }
+    }
+    
+    /// 从URL抓取文章列表
+    /// - Parameter url: 要抓取的URL
+    /// - Returns: 提取到的文章列表
+    func fetchArticleList(from url: URL) async -> [ExtractedArticle] {
+        guard let html = await fetchHTML(from: url) else {
+            print("❌ 无法获取HTML: \(url)")
+            return []
+        }
+        
+        let articles = listParser.extractArticles(from: html, baseURL: url)
+        print("📋 从 \(url) 提取到 \(articles.count) 篇文章")
+        
+        return articles
+    }
+    
+    /// 批量抓取多个URL的文章列表
+    /// - Parameter urls: 要抓取的URL数组
+    /// - Returns: 所有提取到的文章列表
+    func fetchArticleLists(from urls: [URL]) async -> [ExtractedArticle] {
+        await withTaskGroup(of: [ExtractedArticle].self) { group in
+            for url in urls {
+                group.addTask {
+                    await self.fetchArticleList(from: url)
+                }
+            }
+            
+            var allArticles: [ExtractedArticle] = []
+            for await articles in group {
+                allArticles.append(contentsOf: articles)
+            }
+            
+            return allArticles
         }
     }
     

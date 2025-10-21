@@ -10,16 +10,19 @@
 		1C9E72652EA6273B00500ED3 /* SiteRadioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E72642EA6273B00500ED3 /* SiteRadioApp.swift */; };
 		1C9E72692EA6273D00500ED3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C9E72682EA6273D00500ED3 /* Assets.xcassets */; };
 		1C9E726C2EA6273D00500ED3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C9E726B2EA6273D00500ED3 /* Preview Assets.xcassets */; };
-		1C9E727A2EA6275200500ED3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E72752EA6275200500ED3 /* ContentView.swift */; };
-		1C9E727B2EA6275200500ED3 /* SettingsRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E72762EA6275200500ED3 /* SettingsRootView.swift */; };
-		1C9E727C2EA6275200500ED3 /* SubscriptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E72772EA6275200500ED3 /* SubscriptionsView.swift */; };
-		1C9E72892EA62F3400500ED3 /* FeedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E72852EA62F3400500ED3 /* FeedService.swift */; };
-		1C9E728A2EA62F3400500ED3 /* FetcherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E72862EA62F3400500ED3 /* FetcherService.swift */; };
-		1C9E728B2EA62F3400500ED3 /* ParserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E72872EA62F3400500ED3 /* ParserProtocol.swift */; };
-		1C9E72972EA634D600500ED3 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E72932EA634D600500ED3 /* AppModel.swift */; };
-		1C9E72982EA634D600500ED3 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E72942EA634D600500ED3 /* FeedItem.swift */; };
-		1C9E72992EA634D600500ED3 /* ParsedArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E72952EA634D600500ED3 /* ParsedArticle.swift */; };
-		1C9E729B2EA6351C00500ED3 /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E729A2EA6351C00500ED3 /* TimelineView.swift */; };
+		1C9E72A32EA638D000500ED3 /* ArticleListParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E729D2EA638D000500ED3 /* ArticleListParser.swift */; };
+		1C9E72A42EA638D000500ED3 /* FeedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E729E2EA638D000500ED3 /* FeedService.swift */; };
+		1C9E72A52EA638D000500ED3 /* FetcherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E729F2EA638D000500ED3 /* FetcherService.swift */; };
+		1C9E72A62EA638D000500ED3 /* FetchStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E72A02EA638D000500ED3 /* FetchStrategy.swift */; };
+		1C9E72A72EA638D000500ED3 /* ParserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E72A12EA638D000500ED3 /* ParserProtocol.swift */; };
+		1C9E72AC2EA638D600500ED3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E72A82EA638D600500ED3 /* ContentView.swift */; };
+		1C9E72AD2EA638D600500ED3 /* SettingsRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E72A92EA638D600500ED3 /* SettingsRootView.swift */; };
+		1C9E72AE2EA638D600500ED3 /* SubscriptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E72AA2EA638D600500ED3 /* SubscriptionsView.swift */; };
+		1C9E72B52EA6396000500ED3 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E72B12EA6396000500ED3 /* AppModel.swift */; };
+		1C9E72B62EA6396000500ED3 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E72B22EA6396000500ED3 /* FeedItem.swift */; };
+		1C9E72B72EA6396000500ED3 /* ParsedArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E72B32EA6396000500ED3 /* ParsedArticle.swift */; };
+		1C9E72BB2EA639D300500ED3 /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E72BA2EA639D300500ED3 /* TimelineView.swift */; };
+		1C9E72BE2EA66ED800500ED3 /* ArticleReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E72BD2EA66ED800500ED3 /* ArticleReaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,16 +30,19 @@
 		1C9E72642EA6273B00500ED3 /* SiteRadioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteRadioApp.swift; sourceTree = "<group>"; };
 		1C9E72682EA6273D00500ED3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C9E726B2EA6273D00500ED3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		1C9E72752EA6275200500ED3 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		1C9E72762EA6275200500ED3 /* SettingsRootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsRootView.swift; sourceTree = "<group>"; };
-		1C9E72772EA6275200500ED3 /* SubscriptionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionsView.swift; sourceTree = "<group>"; };
-		1C9E72852EA62F3400500ED3 /* FeedService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedService.swift; sourceTree = "<group>"; };
-		1C9E72862EA62F3400500ED3 /* FetcherService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetcherService.swift; sourceTree = "<group>"; };
-		1C9E72872EA62F3400500ED3 /* ParserProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParserProtocol.swift; sourceTree = "<group>"; };
-		1C9E72932EA634D600500ED3 /* AppModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
-		1C9E72942EA634D600500ED3 /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
-		1C9E72952EA634D600500ED3 /* ParsedArticle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParsedArticle.swift; sourceTree = "<group>"; };
-		1C9E729A2EA6351C00500ED3 /* TimelineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimelineView.swift; path = ../../../../CursorProject/SiteRadio/SiteRadio/Views/TimelineView.swift; sourceTree = "<group>"; };
+		1C9E729D2EA638D000500ED3 /* ArticleListParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleListParser.swift; sourceTree = "<group>"; };
+		1C9E729E2EA638D000500ED3 /* FeedService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedService.swift; sourceTree = "<group>"; };
+		1C9E729F2EA638D000500ED3 /* FetcherService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetcherService.swift; sourceTree = "<group>"; };
+		1C9E72A02EA638D000500ED3 /* FetchStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchStrategy.swift; sourceTree = "<group>"; };
+		1C9E72A12EA638D000500ED3 /* ParserProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParserProtocol.swift; sourceTree = "<group>"; };
+		1C9E72A82EA638D600500ED3 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1C9E72A92EA638D600500ED3 /* SettingsRootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsRootView.swift; sourceTree = "<group>"; };
+		1C9E72AA2EA638D600500ED3 /* SubscriptionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionsView.swift; sourceTree = "<group>"; };
+		1C9E72B12EA6396000500ED3 /* AppModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		1C9E72B22EA6396000500ED3 /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
+		1C9E72B32EA6396000500ED3 /* ParsedArticle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParsedArticle.swift; sourceTree = "<group>"; };
+		1C9E72BA2EA639D300500ED3 /* TimelineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineView.swift; sourceTree = "<group>"; };
+		1C9E72BD2EA66ED800500ED3 /* ArticleReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleReaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,11 +75,10 @@
 		1C9E72632EA6273B00500ED3 /* SiteRadio */ = {
 			isa = PBXGroup;
 			children = (
-				1C9E72962EA634D600500ED3 /* Models */,
-				1C9E72882EA62F3400500ED3 /* Services */,
-				1C9E72792EA6275200500ED3 /* Views */,
+				1C9E72B42EA6396000500ED3 /* Models */,
+				1C9E72AB2EA638D600500ED3 /* Views */,
+				1C9E72A22EA638D000500ED3 /* Services */,
 				1C9E72642EA6273B00500ED3 /* SiteRadioApp.swift */,
-				1C9E72752EA6275200500ED3 /* ContentView.swift */,
 				1C9E72682EA6273D00500ED3 /* Assets.xcassets */,
 				1C9E726A2EA6273D00500ED3 /* Preview Content */,
 			);
@@ -88,35 +93,46 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		1C9E72792EA6275200500ED3 /* Views */ = {
+		1C9E72A22EA638D000500ED3 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				1C9E729A2EA6351C00500ED3 /* TimelineView.swift */,
-				1C9E72762EA6275200500ED3 /* SettingsRootView.swift */,
-				1C9E72772EA6275200500ED3 /* SubscriptionsView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		1C9E72882EA62F3400500ED3 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				1C9E72852EA62F3400500ED3 /* FeedService.swift */,
-				1C9E72862EA62F3400500ED3 /* FetcherService.swift */,
-				1C9E72872EA62F3400500ED3 /* ParserProtocol.swift */,
+				1C9E72BC2EA63ABA00500ED3 /* Fetcher */,
+				1C9E729D2EA638D000500ED3 /* ArticleListParser.swift */,
+				1C9E729E2EA638D000500ED3 /* FeedService.swift */,
+				1C9E729F2EA638D000500ED3 /* FetcherService.swift */,
+				1C9E72A02EA638D000500ED3 /* FetchStrategy.swift */,
+				1C9E72A12EA638D000500ED3 /* ParserProtocol.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
 		};
-		1C9E72962EA634D600500ED3 /* Models */ = {
+		1C9E72AB2EA638D600500ED3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				1C9E72932EA634D600500ED3 /* AppModel.swift */,
-				1C9E72942EA634D600500ED3 /* FeedItem.swift */,
-				1C9E72952EA634D600500ED3 /* ParsedArticle.swift */,
+				1C9E72A82EA638D600500ED3 /* ContentView.swift */,
+				1C9E72BA2EA639D300500ED3 /* TimelineView.swift */,
+				1C9E72A92EA638D600500ED3 /* SettingsRootView.swift */,
+				1C9E72AA2EA638D600500ED3 /* SubscriptionsView.swift */,
+				1C9E72BD2EA66ED800500ED3 /* ArticleReaderView.swift */,
 			);
-			name = Models;
-			path = ../../../CursorProject/SiteRadio/SiteRadio/Models;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1C9E72B42EA6396000500ED3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1C9E72B12EA6396000500ED3 /* AppModel.swift */,
+				1C9E72B22EA6396000500ED3 /* FeedItem.swift */,
+				1C9E72B32EA6396000500ED3 /* ParsedArticle.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1C9E72BC2EA63ABA00500ED3 /* Fetcher */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fetcher;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,17 +205,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C9E727B2EA6275200500ED3 /* SettingsRootView.swift in Sources */,
-				1C9E727C2EA6275200500ED3 /* SubscriptionsView.swift in Sources */,
-				1C9E728A2EA62F3400500ED3 /* FetcherService.swift in Sources */,
-				1C9E72982EA634D600500ED3 /* FeedItem.swift in Sources */,
-				1C9E727A2EA6275200500ED3 /* ContentView.swift in Sources */,
-				1C9E72972EA634D600500ED3 /* AppModel.swift in Sources */,
-				1C9E729B2EA6351C00500ED3 /* TimelineView.swift in Sources */,
-				1C9E72992EA634D600500ED3 /* ParsedArticle.swift in Sources */,
+				1C9E72BE2EA66ED800500ED3 /* ArticleReaderView.swift in Sources */,
 				1C9E72652EA6273B00500ED3 /* SiteRadioApp.swift in Sources */,
-				1C9E72892EA62F3400500ED3 /* FeedService.swift in Sources */,
-				1C9E728B2EA62F3400500ED3 /* ParserProtocol.swift in Sources */,
+				1C9E72B72EA6396000500ED3 /* ParsedArticle.swift in Sources */,
+				1C9E72AD2EA638D600500ED3 /* SettingsRootView.swift in Sources */,
+				1C9E72B52EA6396000500ED3 /* AppModel.swift in Sources */,
+				1C9E72A52EA638D000500ED3 /* FetcherService.swift in Sources */,
+				1C9E72AC2EA638D600500ED3 /* ContentView.swift in Sources */,
+				1C9E72A72EA638D000500ED3 /* ParserProtocol.swift in Sources */,
+				1C9E72A62EA638D000500ED3 /* FetchStrategy.swift in Sources */,
+				1C9E72B62EA6396000500ED3 /* FeedItem.swift in Sources */,
+				1C9E72AE2EA638D600500ED3 /* SubscriptionsView.swift in Sources */,
+				1C9E72A32EA638D000500ED3 /* ArticleListParser.swift in Sources */,
+				1C9E72A42EA638D000500ED3 /* FeedService.swift in Sources */,
+				1C9E72BB2EA639D300500ED3 /* TimelineView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

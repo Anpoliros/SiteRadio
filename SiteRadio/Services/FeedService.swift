@@ -10,7 +10,7 @@ class FeedService {
         self.parser = parser
     }
     
-    /// 从订阅链接列表中抓取文章
+    /// 从订阅链接列表中抓取文章列表
     /// - Parameter links: 订阅链接列表
     /// - Returns: 抓取到的FeedItem数组，按发布时间倒序排列
     func fetchFeeds(from links: [SubscriptionLink]) async -> [FeedItem] {
@@ -24,29 +24,25 @@ class FeedService {
             return []
         }
         
-        // 批量抓取HTML
-        let htmlResults = await fetcher.fetchMultiple(urls: urls)
+        // 批量抓取文章列表
+        let extractedArticles = await fetcher.fetchArticleLists(from: urls)
         
-        print("✅ 成功抓取 \(htmlResults.count)/\(urls.count) 个页面")
+        print("✅ 成功抓取 \(extractedArticles.count) 篇文章")
         
-        // 解析HTML并创建FeedItem
+        // 转换为FeedItem
         var feedItems: [FeedItem] = []
         
-        for link in links {
-            guard let url = URL(string: link.urlString),
-                  let html = htmlResults[url] else {
-                print("⚠️ 跳过无效链接: \(link.title)")
-                continue
-            }
-            
-            // 解析文章
-            if let parsedArticle = parser.parse(html: html, from: url) {
-                let feedItem = FeedItem.from(parsedResult: parsedArticle, sourceURL: url)
-                feedItems.append(feedItem)
-                print("✓ 解析成功: \(link.title)")
-            } else {
-                print("⚠️ 解析失败: \(link.title)")
-            }
+        for article in extractedArticles {
+            let feedItem = FeedItem(
+                title: article.title,
+                url: article.url,
+                publishedAt: article.publishedAt ?? Date(),
+                summary: article.summary,
+                author: article.author,
+                source: article.url.host() ?? "Unknown",
+                sourceURL: article.url
+            )
+            feedItems.append(feedItem)
         }
         
         // 按发布时间倒序排列
