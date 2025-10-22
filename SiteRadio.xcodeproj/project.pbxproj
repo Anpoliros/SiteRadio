@@ -10,19 +10,22 @@
 		1C9E72652EA6273B00500ED3 /* SiteRadioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E72642EA6273B00500ED3 /* SiteRadioApp.swift */; };
 		1C9E72692EA6273D00500ED3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C9E72682EA6273D00500ED3 /* Assets.xcassets */; };
 		1C9E726C2EA6273D00500ED3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C9E726B2EA6273D00500ED3 /* Preview Assets.xcassets */; };
-		1C9E72A32EA638D000500ED3 /* ArticleListParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E729D2EA638D000500ED3 /* ArticleListParser.swift */; };
 		1C9E72A42EA638D000500ED3 /* FeedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E729E2EA638D000500ED3 /* FeedService.swift */; };
 		1C9E72A52EA638D000500ED3 /* FetcherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E729F2EA638D000500ED3 /* FetcherService.swift */; };
-		1C9E72A62EA638D000500ED3 /* FetchStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E72A02EA638D000500ED3 /* FetchStrategy.swift */; };
-		1C9E72A72EA638D000500ED3 /* ParserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E72A12EA638D000500ED3 /* ParserProtocol.swift */; };
+		1C9E72A72EA638D000500ED3 /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E72A12EA638D000500ED3 /* Protocol.swift */; };
 		1C9E72AC2EA638D600500ED3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E72A82EA638D600500ED3 /* ContentView.swift */; };
 		1C9E72AD2EA638D600500ED3 /* SettingsRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E72A92EA638D600500ED3 /* SettingsRootView.swift */; };
 		1C9E72AE2EA638D600500ED3 /* SubscriptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E72AA2EA638D600500ED3 /* SubscriptionsView.swift */; };
 		1C9E72B52EA6396000500ED3 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E72B12EA6396000500ED3 /* AppModel.swift */; };
 		1C9E72B62EA6396000500ED3 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E72B22EA6396000500ED3 /* FeedItem.swift */; };
-		1C9E72B72EA6396000500ED3 /* ParsedArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E72B32EA6396000500ED3 /* ParsedArticle.swift */; };
 		1C9E72BB2EA639D300500ED3 /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E72BA2EA639D300500ED3 /* TimelineView.swift */; };
 		1C9E72BE2EA66ED800500ED3 /* ArticleReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E72BD2EA66ED800500ED3 /* ArticleReaderView.swift */; };
+		1C9E72C02EA7B21500500ED3 /* ParseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E72BF2EA7B21500500ED3 /* ParseService.swift */; };
+		1C9E72C22EA7B26A00500ED3 /* DefaultParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E72C12EA7B26A00500ED3 /* DefaultParser.swift */; };
+		1C9E72C42EA7B28A00500ED3 /* CustomParser1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E72C32EA7B28A00500ED3 /* CustomParser1.swift */; };
+		1C9E72C62EA7B2A500500ED3 /* CustomParserExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E72C52EA7B2A500500ED3 /* CustomParserExamples.swift */; };
+		1CCF33D02EA8DE89002AF9AF /* DPv0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCF33CF2EA8DE89002AF9AF /* DPv0.swift */; };
+		1CD5C1632EA7BB4A00DE1538 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = 1CD5C1622EA7BB4A00DE1538 /* SwiftSoup */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,19 +33,21 @@
 		1C9E72642EA6273B00500ED3 /* SiteRadioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteRadioApp.swift; sourceTree = "<group>"; };
 		1C9E72682EA6273D00500ED3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C9E726B2EA6273D00500ED3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		1C9E729D2EA638D000500ED3 /* ArticleListParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleListParser.swift; sourceTree = "<group>"; };
 		1C9E729E2EA638D000500ED3 /* FeedService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedService.swift; sourceTree = "<group>"; };
 		1C9E729F2EA638D000500ED3 /* FetcherService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetcherService.swift; sourceTree = "<group>"; };
-		1C9E72A02EA638D000500ED3 /* FetchStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchStrategy.swift; sourceTree = "<group>"; };
-		1C9E72A12EA638D000500ED3 /* ParserProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParserProtocol.swift; sourceTree = "<group>"; };
+		1C9E72A12EA638D000500ED3 /* Protocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
 		1C9E72A82EA638D600500ED3 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1C9E72A92EA638D600500ED3 /* SettingsRootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsRootView.swift; sourceTree = "<group>"; };
 		1C9E72AA2EA638D600500ED3 /* SubscriptionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubscriptionsView.swift; sourceTree = "<group>"; };
 		1C9E72B12EA6396000500ED3 /* AppModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 		1C9E72B22EA6396000500ED3 /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
-		1C9E72B32EA6396000500ED3 /* ParsedArticle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParsedArticle.swift; sourceTree = "<group>"; };
 		1C9E72BA2EA639D300500ED3 /* TimelineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineView.swift; sourceTree = "<group>"; };
 		1C9E72BD2EA66ED800500ED3 /* ArticleReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleReaderView.swift; sourceTree = "<group>"; };
+		1C9E72BF2EA7B21500500ED3 /* ParseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseService.swift; sourceTree = "<group>"; };
+		1C9E72C12EA7B26A00500ED3 /* DefaultParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultParser.swift; sourceTree = "<group>"; };
+		1C9E72C32EA7B28A00500ED3 /* CustomParser1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomParser1.swift; sourceTree = "<group>"; };
+		1C9E72C52EA7B2A500500ED3 /* CustomParserExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomParserExamples.swift; sourceTree = "<group>"; };
+		1CCF33CF2EA8DE89002AF9AF /* DPv0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPv0.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CD5C1632EA7BB4A00DE1538 /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,12 +102,11 @@
 		1C9E72A22EA638D000500ED3 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				1C9E72BC2EA63ABA00500ED3 /* Fetcher */,
-				1C9E729D2EA638D000500ED3 /* ArticleListParser.swift */,
+				1C9E72BC2EA63ABA00500ED3 /* Parser */,
 				1C9E729E2EA638D000500ED3 /* FeedService.swift */,
 				1C9E729F2EA638D000500ED3 /* FetcherService.swift */,
-				1C9E72A02EA638D000500ED3 /* FetchStrategy.swift */,
-				1C9E72A12EA638D000500ED3 /* ParserProtocol.swift */,
+				1C9E72BF2EA7B21500500ED3 /* ParseService.swift */,
+				1C9E72A12EA638D000500ED3 /* Protocol.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -123,16 +128,19 @@
 			children = (
 				1C9E72B12EA6396000500ED3 /* AppModel.swift */,
 				1C9E72B22EA6396000500ED3 /* FeedItem.swift */,
-				1C9E72B32EA6396000500ED3 /* ParsedArticle.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		1C9E72BC2EA63ABA00500ED3 /* Fetcher */ = {
+		1C9E72BC2EA63ABA00500ED3 /* Parser */ = {
 			isa = PBXGroup;
 			children = (
+				1C9E72C12EA7B26A00500ED3 /* DefaultParser.swift */,
+				1C9E72C32EA7B28A00500ED3 /* CustomParser1.swift */,
+				1C9E72C52EA7B2A500500ED3 /* CustomParserExamples.swift */,
+				1CCF33CF2EA8DE89002AF9AF /* DPv0.swift */,
 			);
-			path = Fetcher;
+			path = Parser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +159,9 @@
 			dependencies = (
 			);
 			name = SiteRadio;
+			packageProductDependencies = (
+				1CD5C1622EA7BB4A00DE1538 /* SwiftSoup */,
+			);
 			productName = SiteRadio;
 			productReference = 1C9E72612EA6273B00500ED3 /* SiteRadio.app */;
 			productType = "com.apple.product-type.application";
@@ -179,6 +190,9 @@
 				Base,
 			);
 			mainGroup = 1C9E72582EA6273B00500ED3;
+			packageReferences = (
+				1CD5C1612EA7BB4A00DE1538 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+			);
 			productRefGroup = 1C9E72622EA6273B00500ED3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -205,20 +219,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C9E72C22EA7B26A00500ED3 /* DefaultParser.swift in Sources */,
 				1C9E72BE2EA66ED800500ED3 /* ArticleReaderView.swift in Sources */,
 				1C9E72652EA6273B00500ED3 /* SiteRadioApp.swift in Sources */,
-				1C9E72B72EA6396000500ED3 /* ParsedArticle.swift in Sources */,
 				1C9E72AD2EA638D600500ED3 /* SettingsRootView.swift in Sources */,
+				1C9E72C02EA7B21500500ED3 /* ParseService.swift in Sources */,
 				1C9E72B52EA6396000500ED3 /* AppModel.swift in Sources */,
 				1C9E72A52EA638D000500ED3 /* FetcherService.swift in Sources */,
+				1C9E72C42EA7B28A00500ED3 /* CustomParser1.swift in Sources */,
 				1C9E72AC2EA638D600500ED3 /* ContentView.swift in Sources */,
-				1C9E72A72EA638D000500ED3 /* ParserProtocol.swift in Sources */,
-				1C9E72A62EA638D000500ED3 /* FetchStrategy.swift in Sources */,
+				1C9E72A72EA638D000500ED3 /* Protocol.swift in Sources */,
 				1C9E72B62EA6396000500ED3 /* FeedItem.swift in Sources */,
 				1C9E72AE2EA638D600500ED3 /* SubscriptionsView.swift in Sources */,
-				1C9E72A32EA638D000500ED3 /* ArticleListParser.swift in Sources */,
+				1C9E72C62EA7B2A500500ED3 /* CustomParserExamples.swift in Sources */,
 				1C9E72A42EA638D000500ED3 /* FeedService.swift in Sources */,
 				1C9E72BB2EA639D300500ED3 /* TimelineView.swift in Sources */,
+				1CCF33D02EA8DE89002AF9AF /* DPv0.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +440,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1CD5C1612EA7BB4A00DE1538 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup";
+			requirement = {
+				kind = exactVersion;
+				version = 2.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1CD5C1622EA7BB4A00DE1538 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1CD5C1612EA7BB4A00DE1538 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1C9E72592EA6273B00500ED3 /* Project object */;
 }

@@ -40,9 +40,11 @@ final class AppModel: ObservableObject {
     func loadInitialData() {
         groups = [
             SubscriptionGroup(name: "默认分组", links: [
-                SubscriptionLink(title: "Apple Newsroom", urlString: "https://www.apple.com/newsroom/"),
-                SubscriptionLink(title: "Swift.org", urlString: "https://www.swift.org/blog/"),
-                SubscriptionLink(title: "Anpoliros", urlString: "https://anpoliros.fun/")
+//                SubscriptionLink(title: "Apple Newsroom", urlString: "https://www.apple.com/newsroom/"),
+//                SubscriptionLink(title: "Swift.org", urlString: "https://www.swift.org/blog/"),
+                SubscriptionLink(title: "Anpoliros", urlString: "https://anpoliros.fun/"),
+                SubscriptionLink(title: "Solidot", urlString: "https://www.solidot.org"),
+                SubscriptionLink(title: "HakuNews", urlString: "https://security.fudan.edu.cn/news/")
             ])
         ]
 
